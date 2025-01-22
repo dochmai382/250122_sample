@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한강 작가 소개</title>
+
+    <title>한강 작가 소개</title>
+    <meta
+      name="description"
+      content="맨부커 인터내셔널상을 수상한 한국의 대표 작가 한강의 공식 소개 페이지입니다."
+    />
+
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+
+    <!-- OG 태그 -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="한강 작가 | 공식 소개 페이지" />
+    <meta
+      property="og:description"
+      content="맨부커 인터내셔널상을 수상한 한국의 대표 작가 한강의 공식 소개 페이지입니다."
+    />
+    <meta
+      property="og:image"
+      content="https://i.namu.wiki/i/SVQjE-vZwl8Gm11sBkv3bmmarOeauiuJfnCz6-SX27wsbMXmHByl4bm1wXtiHmgO5LFE2rskHEfYUWmVBGO7QeoCepKdn2KD5m6DuFvGJAgqc31r8xR0dUfQ1rbcMWRSJF65seQeKNlpxQZu7vzYYw.webp"
+    />
+
+    <!-- 트위터 카드 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="한강 작가 | 공식 소개 페이지" />
+    <meta
+      name="twitter:description"
+      content="맨부커 인터내셔널상을 수상한 한국의 대표 작가 한강의 공식 소개 페이지입니다."
+    />
+    <meta name="twitter:image" content="/api/placeholder/1200/630" />
+
+    <!-- 웹폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Sunflower", serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+
+      .hero-section {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url("/api/placeholder/1200/400");
+        background-size: cover;
+        color: white;
+        padding: 100px 0;
+      }
+      .book-card {
+        transition: transform 0.3s;
+      }
+      .book-card:hover {
+        transform: translateY(-5px);
+      }
+
+      #about img {
+        max-height: 300px;
+      }
+
+      /* 토스트 위치 설정 */
+      .toast-container {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        z-index: 1050;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 네비게이션 바 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">한강</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">소개</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#books">작품</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#awards">수상</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 히어로 섹션 -->
+    <section class="hero-section text-center">
+      <div class="container">
+        <h1 class="display-4 mb-4">한강</h1>
+        <p class="lead">맨부커 인터내셔널상 수상 작가</p>
+        <button
+          type="button"
+          class="btn btn-outline-light mt-3"
+          data-bs-toggle="modal"
+          data-bs-target="#quoteModal"
+        >
+          대표 작품 구절 보기
+        </button>
+      </div>
+    </section>
+
+    <!-- 소개 섹션 -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-center mb-4">
+            <img
+              src="https://i.namu.wiki/i/2ROdIWfOXC6_6hb0KpIlS6rIfwRc6YHBCHlVJedyUlAGmAg1MUwFgfp7lKP0-s_C2JG8NRSTUidaM13ilQ8SVip_vrPK4qLAxsunUIq2PYj5X6XSGZQ7CgIavFOJw3oNawlqcV4vjHzplX3bgTYzvw.webp"
+              alt="한강 작가"
+              class="img-fluid rounded shadow"
+            />
+          </div>
+          <div class="col-lg-6">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body">
+                <h2 class="card-title mb-4">작가 소개</h2>
+                <p class="card-text">
+                  한강은 1970년 광주에서 태어난 한국의 소설가입니다.
+                  서울예술대학 창작과를 졸업하고, 1993년 문학과사회 신인상을
+                  받으며 데뷔했습니다.
+                </p>
+                <div class="alert alert-info mt-3">
+                  2016년 소설 '채식주의자'로 맨부커 인터내셔널상을 수상하며 한국
+                  문학의 세계화에 크게 기여했습니다.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 작품 섹션 -->
+    <section id="books" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">주요 작품</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card book-card h-100">
+              <img
+                src="https://i.namu.wiki/i/XSA0httCfzy9TKMA0dLKr5RxhVa64eBtNG0Abiiq5ahzftX8G-FFzcR1Z-r00Ea3IsUCwTQBaEladx4DitoHtFRicg_PZ609OCaY4aL3Du4hIrCJCioPX9mbqxfWoleEIpiPuAYsUvM7QR3rNx7ZQQ.webp"
+                class="card-img-top"
+                alt="채식주의자"
+              />
+              <div class="card-body">
+                <h5 class="card-title">채식주의자</h5>
+                <p class="card-text">
+                  폭력과 육식에 대한 거부로 시작된 한 여성의 고독한 항거를 그린
+                  작품
+                </p>
+                <div class="progress mt-3">
+                  <div class="progress-bar bg-success" style="width: 95%">
+                    독자 평점 95%
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card book-card h-100">
+              <img
+                src="https://i.namu.wiki/i/H3mPz7fZJIDFbH0VQ6BJWOqa-JijgM8P5XxUEXuXfveyWFdFMfFrzsIL9PYuKeB1kk8EWQTH0kWwhIEKJjYNlR89mntaNGhIvF0npypDojJV8C3NNGJjGLowCkVZZtdvq6sZ9mc-inM7cVoB8CNn9A.webp"
+                class="card-img-top"
+                alt="소년이 온다"
+              />
+              <div class="card-body">
+                <h5 class="card-title">소년이 온다</h5>
+                <p class="card-text">1980년 5월 광주를 배경으로 한 작품</p>
+                <div class="progress mt-3">
+                  <div class="progress-bar bg-success" style="width: 92%">
+                    독자 평점 92%
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card book-card h-100">
+              <img
+                src="https://i.namu.wiki/i/5JzN3KdTGLcby8GQezKp_i7cOxlCelpfRVEWnTRw5oAwceJ7Qe4C5IxIp7So7AK7w6nygEs8b9_L0AfO1mJNh4VRpXV8WCtkSxHWSDYbGLsryvvDu12nRvlNoMrHpwqNb_2gb2WElo0ddCzVyWejbQ.webp"
+                class="card-img-top"
+                alt="흰"
+              />
+              <div class="card-body">
+                <h5 class="card-title">흰</h5>
+                <p class="card-text">
+                  '흰' 것들에 대한 사색적 기록을 담은 작품
+                </p>
+                <div class="progress mt-3">
+                  <div class="progress-bar bg-success" style="width: 88%">
+                    독자 평점 88%
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 수상 경력 섹션 -->
+    <section id="awards" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">수상 경력</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="accordion" id="awardsAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#award1"
+                  >
+                    맨부커 인터내셔널상 (2016)
+                  </button>
+                </h2>
+                <div
+                  id="award1"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#awardsAccordion"
+                >
+                  <div class="accordion-body">
+                    소설 '채식주의자'로 한국 작가 최초 수상
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#award2"
+                  >
+                    이상문학상 (2005)
+                  </button>
+                </h2>
+                <div
+                  id="award2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#awardsAccordion"
+                >
+                  <div class="accordion-body">소설 '몽고반점'으로 수상</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#award3"
+                  >
+                    황순원문학상 (2012)
+                  </button>
+                </h2>
+                <div
+                  id="award3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#awardsAccordion"
+                >
+                  <div class="accordion-body">
+                    소설 '그대의 차가운 손'으로 수상
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 모달 부분 수정 -->
+    <div class="modal fade" id="quoteModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">대표 작품 구절</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div
+              id="quoteCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <blockquote class="blockquote">
+                    <p>
+                      "누구도 제 삶을 살아내지 못한다. 그러니 제 죽음도 살아내지
+                      못할 것이다."
+                    </p>
+                    <footer class="blockquote-footer">채식주의자 중에서</footer>
+                  </blockquote>
+                </div>
+                <div class="carousel-item">
+                  <blockquote class="blockquote">
+                    <p>"우리는 모두 서로가 서로의 구원이다."</p>
+                    <footer class="blockquote-footer">
+                      소년이 온다 중에서
+                    </footer>
+                  </blockquote>
+                </div>
+                <div class="carousel-item">
+                  <blockquote class="blockquote">
+                    <p>"모든 흰 것들은 시간 속에서 더욱 흰어졌다."</p>
+                    <footer class="blockquote-footer">흰 중에서</footer>
+                  </blockquote>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#quoteCarousel"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">이전</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#quoteCarousel"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">다음</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 토스트 컴포넌트 -->
+    <div class="toast-container">
+      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <img src="/api/placeholder/20/20" class="rounded me-2" alt="로고" />
+          <strong class="me-auto">한강 작가 소개</strong>
+          <small class="text-muted">방금 전</small>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body">
+          한강 작가의 세계에 오신 것을 환영합니다.
+          <div class="mt-2 pt-2 border-top">
+            <button
+              type="button"
+              class="btn btn-primary btn-sm"
+              onclick="showRandomQuote()"
+            >
+              작품 구절 보기
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- 스크립트 수정 -->
+    <script>
+      // 페이지 로드 시 토스트 표시
+      document.addEventListener("DOMContentLoaded", function () {
+        const toastEl = document.querySelector(".toast");
+        const toast = new bootstrap.Toast(toastEl, {
+          autohide: true,
+          delay: 5000,
+        });
+        toast.show();
+      });
+
+      // 랜덤 구절 표시 함수 수정
+      function showRandomQuote() {
+        const modal = new bootstrap.Modal(
+          document.getElementById("quoteModal")
+        );
+        const carousel = new bootstrap.Carousel(
+          document.getElementById("quoteCarousel")
+        );
+
+        // 랜덤한 슬라이드로 이동
+        const slideCount = document.querySelectorAll(".carousel-item").length;
+        const randomSlide = Math.floor(Math.random() * slideCount);
+        carousel.to(randomSlide);
+
+        modal.show();
+      }
+    </script>
+  </body>
+</html>
